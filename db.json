@@ -1,0 +1,24 @@
+{
+    "users": [
+      {
+        "id": 1,
+        "phoneNumber": "1234567890",
+        "otp": "123456"
+      }
+    ],
+    "customers": [
+      {
+        "id": 1,
+        "name": "Customer 1"
+      },
+      {
+        "id": 2,
+        "name": "Customer 2"
+      },
+      {
+        "id": 3,
+        "name": "Customer 3"
+      }
+    ]
+  }
+  
