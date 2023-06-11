@@ -11,7 +11,7 @@ const Login = () => {
     e.preventDefault();
 
     // Perform OTP verification here
-    const testOTP = '123456'; // Replace with your OTP verification logic
+    const testOTP = '123456'; // For test purpose i have placed an default otp here, it can be changed with the api link for actual api, i have written a backend code for this at server.js page in the same project
     if (otp === testOTP) {
       // OTP verification successful, navigate to the dashboard
       console.log("login successfully");
@@ -29,17 +29,16 @@ const Login = () => {
 
     <div className="form-floating mb-2">
       <input type="Number" maxLength="10" value={mobileNumber} className="form-control" id="floatingInput" placeholder="Phone Number" onChange={(e)=>setMobileNumber(e.target.value)}/>
-      <label forHtml="floatingInput">Phone Number</label>
+      <label htmlFor="floatingInput">Phone Number</label>
     </div>
     <div className="form-floating mb-2">
       <input type="Number" value={otp} className="form-control" id="floatingInput" placeholder="Valid OTP" onChange={(e)=>setOTP(e.target.value)}/>
-      <label forHtml="floatingInput">OTP</label>
+      <label htmlFor="floatingInput">OTP</label>
     </div>
     <button className="btn btn-primary w-100 py-2" type="submit">Sign in</button>
     </form>
   </div>);
 };
 
-// Inline CSS styles...
 
 export default Login;
