@@ -50,7 +50,7 @@ const Map = () => {
               style={{ border: 0 }}
               loading="lazy"
               allowFullScreen
-              src={`https://www.google.com/maps/embed/v1/place?q=${latitude},${longitude}&key=AIzaSyCUGVPe0yb2tJcmxzLHzhEwA38R-Uv5U3c`}
+              src={`https://www.google.com/maps/embed/v1/place?q=${latitude},${longitude}&key=AIzaSyCUGVPe0yb2tJcmxzLHzhEwA38R-Uv5U3c`} //After the key please update your google cloud key
             ></iframe>
           </div>
         ) : (

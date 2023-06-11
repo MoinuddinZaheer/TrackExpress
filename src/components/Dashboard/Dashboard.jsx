@@ -9,10 +9,11 @@ const Dashboard = () => {
   const navigate=useNavigate()
 
   return (
-    <div className='container' style={{marginBottom:"10px"}}>
+    <div className='container' style={{marginBottom:"10px",}}>
       <h2>Dashboard</h2>
-      <button className="btn btn-primary" style={{marginBottom:"5px"}} onClick={()=>navigate("/list")}>Customer List</button>
-      <div className="div">
+      <button className="btn btn-primary" style={{marginBottom:"5px",marginLeft:"150px"}} onClick={()=>navigate("/list")}>Customer List</button>
+      <button className="btn btn-danger" style={{marginBottom:"5px",marginLeft:"5px"}} onClick={()=>navigate("/")}>Log Out</button>
+      <div className="container">
         <Map/>
       </div>
     </div>
