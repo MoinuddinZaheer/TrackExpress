@@ -19,6 +19,7 @@ const Login = () => {
     } else {
       // OTP verification failed, display error message or take appropriate action
       console.log('Invalid OTP');
+      alert("invalid otp")
     }
   };
 

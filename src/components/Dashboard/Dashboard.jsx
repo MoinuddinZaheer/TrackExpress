@@ -13,6 +13,7 @@ const Dashboard = () => {
       <h2>Dashboard</h2>
       <button className="btn btn-primary" style={{marginBottom:"5px"}} onClick={()=>navigate("/list")}>Customer List</button>
       <div className="div">
+        <Map/>
       </div>
     </div>
   );
