@@ -1,8 +1,8 @@
 {
   "name": "trackxpress",
-  "homepage": "https://moinuddinzaheer.github.io/TrackExpress/",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://moinuddinzaheer.github.io/TrackExpress/",
   "dependencies": {
     "@googlemaps/js-api-loader": "^1.16.1",
     "@testing-library/jest-dom": "^5.16.5",
