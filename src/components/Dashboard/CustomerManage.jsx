@@ -10,13 +10,18 @@ const CustomerManage = () => {
   const [customers, setCustomers] = useState(JSON.parse(localStorage.getItem('customer')) || []);
 
   const handleRegister = (e) => {
-    // e.preventDefault();
+    e.preventDefault();
     if (name && phone && location.lat && location.lng) {
       const customer = { name: name, phone: phone, location: location };
       setCustomers([...customers, customer]);
       localStorage.setItem('customer', JSON.stringify([...customers, customer]));
       alert('Customer added successfully');
     }
+  };
+  const handleClearForm = () => {
+    setName('');
+    setPhone('');
+    setLocation({ lat: '', lng: '' });
   };
 
   return (
@@ -41,6 +46,7 @@ const CustomerManage = () => {
           <label htmlFor="floatingInput">longitude</label>
         </div>
         <button className="btn btn-success w-100 py-2" type="submit">Add Customer</button>
+        <button className="btn btn-secondary w-100 py-2 mt-2" type="button" onClick={handleClearForm}>Clear Form</button>
 
       </form>
       <button style={{ marginTop: "10px" }} className='btn btn-primary ms-auto' onClick={() => navigate("/list")}>Go Back To List</button>
